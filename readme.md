@@ -131,17 +131,17 @@
 
 	> Доступ в JavaScript
 	```javascript
-		var article = document.getElementById('electriccars');
-		article.dataset.columns // "3"
-		article.dataset.indexNumber // "12314"
-		article.dataset.parent // "cars"
+	var article = document.getElementById('electriccars');
+	article.dataset.columns // "3"
+	article.dataset.indexNumber // "12314"
+	article.dataset.parent // "cars"
 	```
 
 	> Доступ в CSS
 	```css
-		article::before {
-			content: attr(data-parent);
-		}
+	article::before {
+		content: attr(data-parent);
+	}
 	```
 
 	> Подробнее: https://developer.mozilla.org/ru/docs/Web/Guide/HTML/Using_data_attributes
