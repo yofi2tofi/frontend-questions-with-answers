@@ -3,9 +3,9 @@
 Пулреквесты с доп. вопросами и ответами приветствуются!
 
 Очень полезные ресурсы для js:
-	Тут выучишь js: https://learn.javascript.ru/
+Тут выучишь js: https://learn.javascript.ru/
 
-	А тут ты поймешь, что ты не знаешь js: http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition-rus
+А тут ты поймешь, что ты не знаешь js: http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition-rus
 
 ## Общие вопросы о веб-разработке:
 
