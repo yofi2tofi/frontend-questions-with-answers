@@ -166,11 +166,11 @@
 
 	- Изменён синтаксис
 	- Встраивание SVG и MathML в text/html
-	- Новые элементы: <article>, <aside>, <audio>, <canvas>, <command>, <datalist>, <details>, <embed>, <figcaption>, <figure>, <footer>, <header>, <hgroup>, <keygen>, <main>, <mark>, <meter>, <nav>, <output>, <progress>, <rp>, <rt>, <ruby>, <section>, <source>, <summary>, <time>, <video>, <wbr>[61]
-	- Новые компоненты ввода: date/time, email, url, search, number, range, tel, color[62]
-	- Новые атрибуты: charset (в <meta>), async (в script)
+	- Новые элементы: ```<article>, <aside>, <audio>, <canvas>, <command>, <datalist>, <details>, <embed>, <figcaption>, <figure>, <footer>, <header>, <hgroup>, <keygen>, <main>, <mark>, <meter>, <nav>, <output>, <progress>, <rp>, <rt>, <ruby>, <section>, <source>, <summary>, <time>, <video>, <wbr>```
+	- Новые компоненты ввода: ```date/time, email, url, search, number, range, tel, color```
+	- Новые атрибуты: charset (в ```<meta>```), async (в script)
 	- Глобальные атрибуты, которые могут быть применены ко всем элементам: id, tabindex, hidden, data-* (пользовательские атрибуты данных)
-	- Элементы, которые будут исключены: <acronym>, <applet>, <basefont>, <big>, <center>, <dir>, <font>, <frame>, <frameset>, <isindex>, <noframes>, <strike>, <tt>
+	- Элементы, которые будут исключены: ```<acronym>, <applet>, <basefont>, <big>, <center>, <dir>, <font>, <frame>, <frameset>, <isindex>, <noframes>, <strike>, <tt>```
 
 	> Подробнее: https://ru.wikipedia.org/wiki/HTML5
 
