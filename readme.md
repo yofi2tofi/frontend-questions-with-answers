@@ -209,9 +209,10 @@
 		Минусы:
 		- Данные доступны только внутри окна/вкладки, в котором он был установлен.
 		- Данные не сохраняются, т.е. будут потеряны после закрытия окна/вкладки.
-		- Подобно localStorage, tt работает в политике одинакового происхождения. Таким образом, сохраненные данные будут доступны только в том же месте.
+		- Подобно localStorage, работает в политике одинакового происхождения. Таким образом, сохраненные данные будут доступны только в том же месте.
 
-	> Подробней: 
-		- LocalStorage: https://developer.mozilla.org/ru/docs/Web/API/Window/localStorage
-		- Cookies: https://developer.mozilla.org/ru/docs/Web/HTTP/Куки
-		- SessionStorage: https://developer.mozilla.org/ru/docs/Web/API/Window/sessionStorage
+	> Подробней:
+	
+	- LocalStorage: https://developer.mozilla.org/ru/docs/Web/API/Window/localStorage
+	- Cookies: https://developer.mozilla.org/ru/docs/Web/HTTP/Куки
+	- SessionStorage: https://developer.mozilla.org/ru/docs/Web/API/Window/sessionStorage
