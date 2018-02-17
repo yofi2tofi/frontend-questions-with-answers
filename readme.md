@@ -293,3 +293,50 @@
 	- Совсем глубоко: https://habrahabr.ru/post/210558/
 	- Как рендерит: https://habrahabr.ru/post/224187/
 	- https://stackoverflow.com/questions/33651166/what-is-progressive-rendering
+
+- Что такое meta теги?
+	> ```<meta>``` определяет метатеги, которые используются для хранения информации предназначенной для браузеров и поисковых систем. Например, механизмы поисковых систем обращаются к метатегам для получения описания сайта, ключевых слов и других данных. Разрешается использовать более чем один метатег, все они размещаются в контейнере ```<head>```. Как правило, атрибуты любого метатега сводятся к парам «имя=значение», которые определяются ключевыми словами content, name или http-equiv.
+
+	> Аттрибуты:
+
+	- charset: Задает кодировку документа.
+	- content: Устанавливает значение атрибута, заданного с помощью name или http-equiv.
+	- http-equiv: Предназначен для конвертирования метатега в заголовок HTTP.
+	- name: Имя метатега, также косвенно устанавливает его предназначение.
+
+	> Подробнее об аттрибутах: http://htmlbook.ru/html/META
+
+- Как можно с помощью meta-тега, указать HTTP - заголовок?
+	> ```<meta http-equiv="Content-Type" content="text/html" />```
+
+	> Много подброней: https://ru.wikipedia.org/wiki/Метатеги
+
+- Расскажите о meta-теге с name=viewport
+	> Типичный сайт, оптимизированный для мобильных устройств, содержит следующий мета-тег:
+
+	```html
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	```
+
+	> Свойство width определяет размер окна просмотра. Он может быть установлен на определенное количество пикселей, скажем,width=600 или на специальное значение device-width, которое означает ширину экрана в пикселях CSS в масштабе 100%. (Есть также соответствующие значения height и device-height, которые могут быть полезны для страниц с элементами, которые изменяют размер или положение на основе высоты окна просмотра).
+
+	> Свойство initial-scale контролирует уровень масштабирования при первой загрузке страницы. Свойства maximum-scale, minimum-scale и user-scalable определяют, как пользователям разрешено увеличивать или уменьшать страницу.
+
+	> Подброней: https://developer.mozilla.org/ru/docs/Mozilla/Mobile/Viewport_meta_tag
+
+- Какие теги практически обязательно должны быть в ```head```?
+	```html
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Use the content="ie-edge" tag if your project
+	    supports Internet Explorer prior to version 11. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Page Title</title>
+	```
+
+	> Много больше информации о том, что должно быть в head: https://gethead.info/
+
+- Есть ли разница: ```<meta charset="utf-8" />``` и ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```?
+	> В HTML5 они эквивалентны
+	> Используйте ```<meta charset="utf-8" />``` для веб-браузеров при использовании HTML5.
+
+	> Используйте ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />``` при использовании HTML4 или XHTML или для устаревших парсеров dom, например DOMDocument в php
