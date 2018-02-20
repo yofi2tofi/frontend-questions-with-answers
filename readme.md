@@ -48,7 +48,7 @@
 	</ul>
 </div>
 
-`
+`javascript
 if("geolocation" in navigator) {
 	navigator.geolocation.getCurrentPosition(function(position) {
 	// show the location on a map, perhaps using the Google Maps API
