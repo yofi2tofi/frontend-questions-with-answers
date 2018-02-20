@@ -8,8 +8,12 @@
 
 ## Общие вопросы о веб-разработке:
 
-- Используете вы Perfect Pixel или что-то аналогичное?
+<details>
+<summary>- Используете вы Perfect Pixel или что-то аналогичное?</summary>
+<div>
 	Следует уточнить про допуски при верстке, 5px - 10px
+</div>
+</details>
 
 - Можете ли пояснить разницу между progressive enhancement и graceful degradation?
 	> graceful degradation будет пониматься как отказоустойчивость клиентских веб-интерфейсов.
