@@ -48,7 +48,7 @@
 	</ul>
 </div>
 
-`javascript
+```javascript
 if("geolocation" in navigator) {
 	navigator.geolocation.getCurrentPosition(function(position) {
 	// show the location on a map, perhaps using the Google Maps API
@@ -56,7 +56,7 @@ if("geolocation" in navigator) {
 } else {
 	// Give the user a choice of static maps instead perhaps
 }
-`
+```
 
 <div>
 	<b>1 способ в css</b>:
