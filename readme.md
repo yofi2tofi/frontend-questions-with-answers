@@ -634,9 +634,7 @@ article::before {
 <summary>Как можно с помощью meta-тега, указать HTTP - заголовок?</summary>
 <div>
 	<br />
-	<p>
-```<meta http-equiv="Content-Type" content="text/html" />```
-	</p>
+	<p> <meta http-equiv="Content-Type" content="text/html" /> </p>
 	<p>
 		Много подброней: https://ru.wikipedia.org/wiki/Метатеги
 	</p>
