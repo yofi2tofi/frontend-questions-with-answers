@@ -666,6 +666,7 @@ article::before {
 <summary>Какие теги практически обязательно должны быть в ```head```?</summary>
 <div>
 	<br />
+
 ```html
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Use the content="ie-edge" tag if your project
@@ -673,9 +674,10 @@ article::before {
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Page Title</title>
 ```
-	<p>
-		Много больше информации о том, что должно быть в head: https://gethead.info/
-	</p>
+
+<p>
+	Много больше информации о том, что должно быть в head: https://gethead.info/
+</p>
 </div>
 </details>
 
