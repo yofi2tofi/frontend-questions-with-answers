@@ -412,18 +412,36 @@ article::before {
 </div>
 </details>
 
-- В чем отличия HTML5 от HTML4.01 и XHTML1.0
-	> Ниже представлен список отличий(не все):
+<details>
+<summary>В чем отличия HTML5 от HTML4.01 и XHTML1.0</summary>
+<div>
+	<p>Ниже представлен список отличий(не все):</p>
+	<ul>
+		<li>Изменён синтаксис</li>
+		<li>Встраивание SVG и MathML в text/html</li>
+		<li>Новые элементы: 
 
-	- Изменён синтаксис
-	- Встраивание SVG и MathML в text/html
-	- Новые элементы: ```<article>, <aside>, <audio>, <canvas>, <command>, <datalist>, <details>, <embed>, <figcaption>, <figure>, <footer>, <header>, <hgroup>, <keygen>, <main>, <mark>, <meter>, <nav>, <output>, <progress>, <rp>, <rt>, <ruby>, <section>, <source>, <summary>, <time>, <video>, <wbr>```
-	- Новые компоненты ввода: ```date/time, email, url, search, number, range, tel, color```
-	- Новые атрибуты: charset (в ```<meta>```), async (в script)
-	- Глобальные атрибуты, которые могут быть применены ко всем элементам: id, tabindex, hidden, data-* (пользовательские атрибуты данных)
-	- Элементы, которые будут исключены: ```<acronym>, <applet>, <basefont>, <big>, <center>, <dir>, <font>, <frame>, <frameset>, <isindex>, <noframes>, <strike>, <tt>```
+```<article>, <aside>, <audio>, <canvas>, <command>, <datalist>, <details>, <embed>, <figcaption>, <figure>, <footer>, <header>, <hgroup>, <keygen>, <main>, <mark>, <meter>, <nav>, <output>, <progress>, <rp>, <rt>, <ruby>, <section>, <source>, <summary>, <time>, <video>, <wbr>```
 
-	> Подробнее: https://ru.wikipedia.org/wiki/HTML5
+</li>
+	<li>Новые компоненты ввода: 
+
+```date/time, email, url, search, number, range, tel, color```
+
+</li>
+	<li>Новые атрибуты: charset (в <b>meta</b>), async (в script)</li>
+	<li>Глобальные атрибуты, которые могут быть применены ко всем элементам: id, tabindex, hidden, data-* (пользовательские атрибуты данных)</li>
+	<li>Элементы, которые будут исключены: 
+
+```<acronym>, <applet>, <basefont>, <big>, <center>, <dir>, <font>, <frame>, <frameset>, <isindex>, <noframes>, <strike>, <tt>```
+
+</li>
+	</ul>
+	<p>
+		Подробнее: https://ru.wikipedia.org/wiki/HTML5
+	</p>
+</div>
+</details>
 
 - Объясните разницу между cookies, sessionStorage и localStorage.
 	- LocalStorage
