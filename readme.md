@@ -1004,7 +1004,7 @@ article::before {
 </div>
 </details>
 
-</details>
+<details>
 <summary>Чем отличается article от section?</summary>
 <div>
 	<br />
@@ -1048,7 +1048,7 @@ article::before {
 </div>
 </details>
 
-</details>
+<details>
 <summary>Какие категории считаются основными категориями контента?</summary>
 <div>
 	<br />
@@ -1077,7 +1077,7 @@ article::before {
 </div>
 </details>
 
-</details>
+<details>
 <summary>Можно ли вложить <b>p</b> в другой такой же <b>p</b>? Можно ли вложить <b>div</b> в <b>p</b>?</summary>
 <div>
 	<br />
@@ -1095,7 +1095,7 @@ article::before {
 </div>
 </details>
 
-</details>
+<details>
 <summary>Чем отличается класс (class) от идентификатора (id) в HTML?</summary>
 <div>
 	<br />
