@@ -637,43 +637,54 @@ article::before {
 
 `<meta http-equiv="Content-Type" content="text/html" />`
 
+<p>
+	Много подброней: https://ru.wikipedia.org/wiki/Метатеги
+</p>
+</div>
+</details>
+
+<details>
+<summary>Расскажите о meta-теге с name=viewport</summary>
+<div>
+	<br />
+	<p>Типичный сайт, оптимизированный для мобильных устройств, содержит следующий мета-тег:</p>
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+<p>Свойство width определяет размер окна просмотра. Он может быть установлен на определенное количество пикселей, скажем,width=600 или на специальное значение device-width, которое означает ширину экрана в пикселях CSS в масштабе 100%. (Есть также соответствующие значения height и device-height, которые могут быть полезны для страниц с элементами, которые изменяют размер или положение на основе высоты окна просмотра).</p>
+<p>Свойство initial-scale контролирует уровень масштабирования при первой загрузке страницы. Свойства maximum-scale, minimum-scale и user-scalable определяют, как пользователям разрешено увеличивать или уменьшать страницу.</p>
+<p>"user-scalable=no" запрещается любое масштабирование</p>
+<p>
+	Подброней: https://developer.mozilla.org/ru/docs/Mozilla/Mobile/Viewport_meta_tag
+</p>
+</div>
+</details>
+
+<details>
+<summary>Какие теги практически обязательно должны быть в ```head```?</summary>
+<div>
+	<br />
+```html
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Use the content="ie-edge" tag if your project
+    supports Internet Explorer prior to version 11. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Page Title</title>
+```
 	<p>
-		Много подброней: https://ru.wikipedia.org/wiki/Метатеги
+		Много больше информации о том, что должно быть в head: https://gethead.info/
 	</p>
 </div>
 </details>
 
-- Расскажите о meta-теге с name=viewport
-	> Типичный сайт, оптимизированный для мобильных устройств, содержит следующий мета-тег:
-
-	```html
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	```
-
-	> Свойство width определяет размер окна просмотра. Он может быть установлен на определенное количество пикселей, скажем,width=600 или на специальное значение device-width, которое означает ширину экрана в пикселях CSS в масштабе 100%. (Есть также соответствующие значения height и device-height, которые могут быть полезны для страниц с элементами, которые изменяют размер или положение на основе высоты окна просмотра).
-
-	> Свойство initial-scale контролирует уровень масштабирования при первой загрузке страницы. Свойства maximum-scale, minimum-scale и user-scalable определяют, как пользователям разрешено увеличивать или уменьшать страницу.
-
-	"user-scalable=no" запрещается любое масштабирование
-
-	> Подброней: https://developer.mozilla.org/ru/docs/Mozilla/Mobile/Viewport_meta_tag
-
-- Какие теги практически обязательно должны быть в ```head```?
-	```html
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- Use the content="ie-edge" tag if your project
-	    supports Internet Explorer prior to version 11. -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Page Title</title>
-	```
-
-	> Много больше информации о том, что должно быть в head: https://gethead.info/
-
-- Есть ли разница: ```<meta charset="utf-8" />``` и ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```?
-	> В HTML5 они эквивалентны
-	> Используйте ```<meta charset="utf-8" />``` для веб-браузеров при использовании HTML5.
-
-	> Используйте ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />``` при использовании HTML4 или XHTML или для устаревших парсеров dom, например DOMDocument в php
+<details>
+<summary>Есть ли разница: ```<meta charset="utf-8" />``` и ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />```?</summary>
+	<p>В HTML5 они эквивалентны</p>
+	<p>Используйте ```<meta charset="utf-8" />``` для веб-браузеров при использовании HTML5.</p>
+	<p>Используйте ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />``` при использовании HTML4 или XHTML или для устаревших парсеров dom, например DOMDocument в php</p>
+</details>
 
 - Как сделать чтобы все гиперссылки сайта открывались в новом окне, т.е чтобы по умолчанию использовался ```target="_blank"```?
 	> Нужно в области head прописать тег base с атрибутом ```target="_blank"```: 
