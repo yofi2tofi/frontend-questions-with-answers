@@ -682,10 +682,10 @@ article::before {
 </details>
 
 <details>
-<summary>Есть ли разница: <meta charset="utf-8" /> и `<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />`?</summary>
+<summary>Есть ли разница: `meta charset="utf-8"` и `meta http-equiv="Content-Type" content="text/html; charset=utf-8"`?</summary>
 	<p>В HTML5 они эквивалентны</p>
-	<p>Используйте ```<meta charset="utf-8" />``` для веб-браузеров при использовании HTML5.</p>
-	<p>Используйте ```<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />``` при использовании HTML4 или XHTML или для устаревших парсеров dom, например DOMDocument в php</p>
+	<p>Используйте ```meta charset="utf-8"``` для веб-браузеров при использовании HTML5.</p>
+	<p>Используйте ```meta http-equiv="Content-Type" content="text/html; charset=utf-8"``` при использовании HTML4 или XHTML или для устаревших парсеров dom, например DOMDocument в php</p>
 </details>
 
 - Как сделать чтобы все гиперссылки сайта открывались в новом окне, т.е чтобы по умолчанию использовался ```target="_blank"```?
