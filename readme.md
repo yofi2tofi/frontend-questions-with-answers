@@ -415,6 +415,7 @@ article::before {
 <details>
 <summary>В чем отличия HTML5 от HTML4.01 и XHTML1.0</summary>
 <div>
+	<br />
 	<p>Ниже представлен список отличий(не все):</p>
 	<ul>
 		<li>Изменён синтаксис</li>
