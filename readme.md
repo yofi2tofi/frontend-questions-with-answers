@@ -693,9 +693,11 @@ article::before {
 <div>
 	<br />
 	<p>Нужно в области head прописать тег base с атрибутом `target="_blank"`:</p>
+
 ```html
 <head><base target=”_blank”></head>
 ```
+
 </div>
 </details>
 
