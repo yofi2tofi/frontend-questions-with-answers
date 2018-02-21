@@ -688,7 +688,7 @@ article::before {
 	<p>Используйте ```meta http-equiv="Content-Type" content="text/html; charset=utf-8"``` при использовании HTML4 или XHTML или для устаревших парсеров dom, например DOMDocument в php</p>
 </details>
 
-</details>
+<details>
 <summary>Как сделать чтобы все гиперссылки сайта открывались в новом окне, т.е чтобы по умолчанию использовался `target="_blank"`?</summary>
 <div>
 	<br />
@@ -838,6 +838,8 @@ article::before {
 
 <details>
 <summary>В чём разница между canvas и SVG?</summary>
+<div>
+	<br />
 	<ul>
 		<li>
 			<b>SVG</b>
@@ -880,40 +882,91 @@ article::before {
 		<li>https://habrahabr.ru/company/simbirsoft/blog/332750/</li>
 		<li>https://developer.mozilla.org/ru/docs/Web/API/Canvas_API/Tutorial</li>
 	</ul>
+</div>
 </details>
 
-- В каких случаях лучше выбрать canvas, а в каких svg?
-	- HTML 5 Canvas следует использовать для:
+<details>
+<summary>В каких случаях лучше выбрать canvas, а в каких svg?</summary>
+<div>
+	<br />
+	<ul>
+		<li>
+			<b>HTML 5 Canvas следует использовать для:</b>
+			<ul>
+				<li>Редактирования изображений: обрезки, изменения размеров, фильтров (удаления эффекта красных глаз, создания эффекта сепии, изменения цветности или яркости)</li>
+				<li>Создания растровой графики: визуализации данных, создания фракталов и графиков функций.</li>
+				<li>Анализа изображений: создания гистограмм и т.п.</li>
+				<li>Создания игровой графики, такой как спрайты и фоны.</li>
+			</ul>
+		</li>
+		<li>
+			<b>SVG следует использовать для:</b>
+			<ul>
+				<li>Создания пользовательских интерфейсов веб-приложений, независимых от разрешения экрана.</li>
+				<li>Высокоинтерактивных анимированных пользовательских интерфейсов.</li>
+				<li>Графиков и диаграмм.</li>
+				<li>Редактирования векторных изображений.</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</details>
 
-		- Редактирования изображений: обрезки, изменения размеров, фильтров (удаления эффекта красных глаз, создания эффекта сепии, изменения цветности или яркости)
-		- Создания растровой графики: визуализации данных, создания фракталов и графиков функций.
-		- Анализа изображений: создания гистограмм и т.п.
-		- Создания игровой графики, такой как спрайты и фоны.
+<details>
+<summary>Что такое WebGL?</summary>
+<div>
+	<br />
+	<p>WebGL (Web-based Graphics Library) — программная библиотека для языка программирования JavaScript, позволяющая создавать на JavaScript интерактивную 3D-графику, функционирующую в широком спектре совместимых с ней веб-браузеров. За счёт использования низкоуровневых средств поддержки OpenGL, часть кода на WebGL может выполняться непосредственно на видеокартах. WebGL — это контекст элемента canvas HTML, который обеспечивает API 3D графики без использования плагинов. Спецификация версии 1.0 была выпущена 3 марта 2011 года. Проект по созданию библиотеки управляется некоммерческой организацией Khronos Group.</p>
+	<p>Подробней: https://ru.wikipedia.org/wiki/WebGL</p>
+</div>
+</details>
 
-	- SVG следует использовать для:
+<details>
+<summary>Перечислите блочные элементы, которые Вам известны(хотя бы 5).</summary>
+<div>
+	<br />
+	<p>
 
-		- Создания пользовательских интерфейсов веб-приложений, независимых от разрешения экрана.
-		- Высокоинтерактивных анимированных пользовательских интерфейсов.
-		- Графиков и диаграмм.
-		- Редактирования векторных изображений.
+```<address>, <article>, <aside>, <audio>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <fieldset>, <figcaption>, <figure>, <footer>, <form>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <header>, <hgroup>, <hr>, <li>, <main>, <nav>, <noscript>, <ol>, <output>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>, <video>```
 
-- Что такое WebGL?
-	> WebGL (Web-based Graphics Library) — программная библиотека для языка программирования JavaScript, позволяющая создавать на JavaScript интерактивную 3D-графику, функционирующую в широком спектре совместимых с ней веб-браузеров. За счёт использования низкоуровневых средств поддержки OpenGL, часть кода на WebGL может выполняться непосредственно на видеокартах. WebGL — это контекст элемента canvas HTML, который обеспечивает API 3D графики без использования плагинов. Спецификация версии 1.0 была выпущена 3 марта 2011 года. Проект по созданию библиотеки управляется некоммерческой организацией Khronos Group.
+</p>
+	<p>
+		Подробней: https://developer.mozilla.org/ru/docs/Web/HTML/Block-level_elements
+	</p>
+</div>
+</details>
 
-	> Подробней: https://ru.wikipedia.org/wiki/WebGL
+<details>
+<summary>Перечислите строчные элементы, которые Вам известны(хотя бы 5).</summary>
+<div>
+	<br />
+	<ul>
+		<li>
 
-- Перечислите блочные элементы, которые Вам известны(хотя бы 5).
-	> ```<address>, <article>, <aside>, <audio>, <blockquote>, <canvas>, <dd>, <div>, <dl>, <fieldset>, <figcaption>, <figure>, <footer>, <form>, <h1>, <h2>, <h3>, <h4>, <h5>, <h6>, <header>, <hgroup>, <hr>, <li>, <main>, <nav>, <noscript>, <ol>, <output>, <p>, <pre>, <section>, <table>, <tfoot>, <ul>, <video>```
+```b, big, i, small, tt```
 
-	> Подробней: https://developer.mozilla.org/ru/docs/Web/HTML/Block-level_elements
+</li>
+		<li>
+			
+```abbr, acronym, cite, code, dfn, em, kbd, strong, samp, time, var```
 
-- Перечислите строчные элементы, которые Вам известны(хотя бы 5).
-	> ```b, big, i, small, tt```
-	> ```abbr, acronym, cite, code, dfn, em, kbd, strong, samp, time, var```
-	> ```a, bdo, br, img, map, object, q, script, span, sub, sup```
-	> ```button, input, label, select, textarea```
+</li>
+		<li>
 
-	> Подробней: https://developer.mozilla.org/ru/docs/Web/HTML/Строчные_Элементы
+```a, bdo, br, img, map, object, q, script, span, sub, sup```
+			
+</li>
+		<li>
+
+```button, input, label, select, textarea```
+
+</li>
+	</ul>
+	<p>
+		Подробней: https://developer.mozilla.org/ru/docs/Web/HTML/Строчные_Элементы
+	</p>
+</div>
+</details>
 
 - Дайте пояснения, для какой цели добавленны след. элементы: ```<article>, <aside>, <audio>, <canvas>, <figcaption>, <figure>, <footer>, <header>, <hgroup>, <output>, <section>, <video>```. (Кратко)
 	- ```<article>```: Тег ```<article>``` задает содержание сайта вроде новости, статьи, записи блога, форума или др. Элемент  должен содержать часть самодостаточной информации, которая может быть вырвана из контекста всей страницы без потери смысла.
