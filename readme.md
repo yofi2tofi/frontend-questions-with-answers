@@ -156,6 +156,16 @@ if("geolocation" in navigator) {
 </details>
 
 <details>
+<summary>Является ли, Drag and drop частью спецификации? Какие drag-события Вам известны?</summary>
+<div>
+	<br />
+	<p>Да, это часть спецификации</p>
+	<p><b>dragstart</b>, <b>dragenter</b>, <b>dragover</b>, <b>dragleave</b>, <b>drag</b>, <b>drop</b>, <b>dragend</b></p>
+	<p>Подробней: https://developer.mozilla.org/ru/docs/Web/Guide/HTML/Drag_and_drop#events</p>
+</div>
+</details>
+
+<details>
 <summary>Является ли WebSQL частью спецификации HTML 5?</summary>
 <div> <br />
 	<p>Нет. Многие относят его к HTML 5, но WebSQL не является частью спецификации HTML 5. Спецификация основана на SQLite.</p>
@@ -554,6 +564,14 @@ article::before {
 </details>
 
 <details>
+<summary>Каким способом, возможно вложить js-объект в localstorage?</summary>
+<div>
+	<br />
+	<p>localStorage.setItem(‘Object’, JSON.stringify(Object))</p>
+</div>
+</details>
+
+<details>
 <summary>Нужно ли в 5-м ХТМЛ закрывать /> одиночные теги ?</summary>
 <div>
 	<br />
@@ -755,6 +773,21 @@ article::before {
 </details>
 
 <details>
+<summary>Что такое аттрибут target и какие значения он принимает и что делает?</summary>
+<div>
+	<br />
+	<p>По умолчанию, при переходе по ссылке документ открывается в текущем окне или фрейме. При необходимости, это условие может быть изменено атрибутом target тега <a>. В XHTML применение этого атрибута запрещено. Все значения аттрибуты начинаются с \_</p>
+	<ul>
+		<li><b>blank</b> - Загружает страницу в новое окно браузера.</li>
+		<li><b>self</b> - Загружает страницу в текущее окно.</li>
+		<li><b>parent</b> - Загружает страницу во фрейм-родитель, если фреймов нет, то это значение работает как self.</li>
+		<li><b>top</b> - Отменяет все фреймы и загружает страницу в полном окне браузера, если фреймов нет, то это значение работает как self.</li>
+	</ul>
+	<p>Подробней: http://htmlbook.ru/html/a/target</p>
+</div>
+</details>
+
+<details>
 <summary>Что такое абсолютная и относительная ссылка?</summary>
 <div>
 	<br />
@@ -859,6 +892,64 @@ article::before {
 <p>
 	Подробней: http://htmlbook.ru/blog/element-output
 </p>
+</div>
+</details>
+
+<details>
+<summary>Для чего нужен атрибут autocomplete? Какие параметры принимает?</summary>
+<div>
+	<br />
+	<p>Этот атрибут помогает заполнять поля форм текстом, который был введён в них ранее. Значения сохраняет и подставляет браузер, при этом автозаполнение по соображениям безопасности может отключаться пользователем в настройках и не может в таком случае управляться атрибутом autocomplete.</p>
+	<ul>
+		<li><b>on</b> - Включает автозаполнение текста.</li>
+		<li><b>off</b> - Отключает автозаполнение. Это значение обычно используется для отмены сохранения в браузере важных данных (паролей, номеров банковских карт), а также редко вводимых или уникальных данных (капча).</li>
+	</ul>
+	<p>
+		Подробней: http://htmlbook.ru/html/input/autocomplete
+	</p>
+</div>
+</details>
+
+<details>
+<summary>Какой формат у input type="date" в HTML5</summary>
+<div>
+	<br />
+	<p>YYYY-MM-DD</p>
+</div>
+</details>
+
+<details>
+<summary>Какой метод запускает проигрывание аудио-файла?</summary>
+<div>
+	<br />
+	<p>var sound = new Audio(«file.wav»);</p>
+	<p>sound.play();</p>
+</div>
+</details>
+
+<details>
+<summary>Какой формат видео файлов сейчас поддерживается html5?</summary>
+<div>
+	<br />
+	<p>MPEG 4</p>
+</div>
+</details>
+
+<details>
+<summary>Какие элементы в HTML5 могут иметь aria атрибут?</summary>
+<div>
+	<br />
+	<p>Любой элемент</p>
+</div>
+</details>
+
+<details>
+<summary>Знаете ли вы тег <b>dfn</b> и за что он отвечает?</summary>
+<div>
+	<br />
+	<p>Как правило, в документе, когда упоминается новый термин, он выделяется курсивом и дается его определение. При использовании этого термина в дальнейшем, он считается уже известным читателю. Тег <b>dfn</b> применяется для выделения таких терминов при их первом появлении в тексте.</p>
+	<p>Браузеры отображают содержимое контейнера <dfn> с помощью курсивного начертания.</p>
+	<p>Подробней: http://htmlbook.ru/html/DFN</p>
 </div>
 </details>
 
@@ -1016,7 +1107,7 @@ article::before {
 </details>
 
 <details>
-<summary>Дайте пояснения, для какой цели добавленны след. элементы: <b>article</b>, <b>aside</b>, <b>audio</b>, <b>canvas</b>, <b>figcaption</b>, <b>figure</b>, <b>footer</b>, <b>header</b>, <b>hgroup</b>, <b>output</b>, <b>section</b>, <b>video></b>. (Кратко)</summary>
+<summary>Дайте пояснения, для какой цели добавленны след. элементы: <b>article</b>, <b>aside</b>, <b>audio</b>, <b>canvas</b>, <b>figcaption</b>, <b>figure</b>, <b>footer</b>, <b>header</b>, <b>hgroup</b>, <b>output</b>, <b>section</b>, <b>video</b>. (Кратко)</summary>
 <div>
 	<br />
 	<ul>
@@ -1046,6 +1137,15 @@ article::before {
 		<li>https://developer.mozilla.org/ru/docs/Web/HTML/Element/section</li>
 		<li>https://developer.mozilla.org/ru/docs/Web/HTML/Element/video</li>
 	</ul> 
+</div>
+</details>
+
+<details>
+<summary>На какие события <b>video</b> или <b>audio</b> можно подписаться?(Кандидат может не знать ни одного. Это легко гуглится в работе)</summary>
+<div>
+	<br />
+	<p><b>abort</b>, <b>canplay</b>, <b>ended</b>, <b>loadstart</b>, <b>pause</b>, <b>play</b>, <b>playing</b></p>
+	<p>Подробней: https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Media_events</p>
 </div>
 </details>
 
@@ -1156,6 +1256,50 @@ article::before {
 		<li>Классы могут использоваться в коде неоднократно.</li>
 		<li>Имена классов чувствительны к регистру.</li>
 		<li>Классы можно комбинировать между собой, добавляя несколько классов к одному тегу.</li>
+	</ul>
+</div>
+</details>
+
+<details>
+<summary>Какое событие сработает при потери фокуса элементом формы?</summary>
+<div>
+	<br />
+	<p>Событие onblur возникает при потере элемента фокуса. Это обычно происходит, если щелкнуть на другой элемент текущего документа. Событие onblur противоположно по своему действию событию onfocus.</p>
+	<b>Подробенй:</b>
+	<ul>
+		<li>http://htmlbook.ru/html/attr/onBlur</li>
+		<li>https://developer.mozilla.org/ru/docs/Web/Events/blur</li>
+	</ul>
+</div>
+</details>
+
+<details>
+<summary>Для чего существует тег <b>q</b>?</summary>
+<div>
+	<br />
+	<p>Тег <b>q</b> используется для выделения в тексте цитат. Содержимое контейнера автоматически отображается в браузере в кавычках.</p>
+	<p>Подробней: http://htmlbook.ru/html/Q</p>
+</div>
+</details>
+
+<details>
+<summary>Что такое "Якорь"?</summary>
+<div>
+	<br />
+	<p>Якорем называется закладка с уникальным именем на определенном месте веб-страницы, предназначенная для создания перехода к ней по ссылке. Якоря удобно применять в документах большого объема, чтобы можно было быстро переходить к нужному разделу.</p>
+	<p>Подробней: http://htmlbook.ru/samhtml/yakorya</p>
+</div>
+</details>
+
+<details>
+<summary>Расскажите про тег <b>keygen</b></summary>
+<div>
+	<br />
+	<p>Используется для генерации пары ключей — закрытого и открытого. Когда форма отправляется на сервер, закрытый ключ сохраняется на локальном компьютере, а открытый ключ передается вместе с формой. Сами ключи необходимы для шифрования и расшифровки данных, создания и проверки цифровой подписи.</p>
+	<b>Подробней:</b>
+	<ul>
+		<li>http://htmlbook.ru/html/KEYGEN</li>
+		<li>https://developer.mozilla.org/en-US/docs/Web/HTML/Element/keygen</li>
 	</ul>
 </div>
 </details>
