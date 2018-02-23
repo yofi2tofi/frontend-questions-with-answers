@@ -307,6 +307,46 @@ if("geolocation" in navigator) {
 </div>
 </details>
 
+<details>
+<summary>Что такое архитектурный-паттерн MVP?\*</summary>
+<div>
+	<br />
+	<p>В процессе</p>
+</div>
+</details>
+
+<details>
+<summary>Что такое архитектурный-паттерн MVVM?\*</summary>
+<div>
+	<br />
+	<p>В процессе</p>
+</div>
+</details>
+
+<details>
+<summary>Что такое DOM?\*</summary>
+<div>
+	<br />
+	<p>В процессе</p>
+</div>
+</details>
+
+<details>
+<summary>Что такое Virtual DOM?\*</summary>
+<div>
+	<br />
+	<p>В процессе</p>
+</div>
+</details>
+
+<details>
+<summary>Что такое Shadow DOM?\*</summary>
+<div>
+	<br />
+	<p>В процессе</p>
+</div>
+</details>
+
 ## Вопросы по HTML:
 
 <details>
