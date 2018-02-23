@@ -156,22 +156,22 @@ if("geolocation" in navigator) {
 </details>
 
 <details>
-<summary>Является ли, Drag and drop частью спецификации? Какие drag-события Вам известны?</summary>
-<div>
-	<br />
-	<p>Да, это часть спецификации</p>
-	<p><b>dragstart</b>, <b>dragenter</b>, <b>dragover</b>, <b>dragleave</b>, <b>drag</b>, <b>drop</b>, <b>dragend</b></p>
-	<p>Подробней: https://developer.mozilla.org/ru/docs/Web/Guide/HTML/Drag_and_drop#events</p>
-</div>
-</details>
-
-<details>
 <summary>Является ли WebSQL частью спецификации HTML 5?</summary>
 <div> <br />
 	<p>Нет. Многие относят его к HTML 5, но WebSQL не является частью спецификации HTML 5. Спецификация основана на SQLite.</p>
 	<p>
 		Поддержка браузерами: https://caniuse.com/#search=websql
 	</p>
+</div>
+</details>
+
+<details>
+<summary>Является ли, Drag and drop частью спецификации? Какие drag-события Вам известны?</summary>
+<div>
+	<br />
+	<p>Да, это часть спецификации</p>
+	<p><b>dragstart</b>, <b>dragenter</b>, <b>dragover</b>, <b>dragleave</b>, <b>drag</b>, <b>drop</b>, <b>dragend</b></p>
+	<p>Подробней: https://developer.mozilla.org/ru/docs/Web/Guide/HTML/Drag_and_drop#events</p>
 </div>
 </details>
 
@@ -286,6 +286,26 @@ if("geolocation" in navigator) {
 </div>
 </details>
 
+<details>
+<summary>Что такое архитектурный-паттерн MVC?</summary>
+<div>
+	<br />
+	<p>Model-View-Controller (MVC, «Модель-Представление-Контроллер», «Модель-Вид-Контроллер») — схема разделения данных приложения, пользовательского интерфейса и управляющей логики на три отдельных компонента: модель, представление и контроллер — таким образом, что модификация каждого компонента может осуществляться независимо</p>
+	<ul>
+		<li><b>Модель</b> (Model) предоставляет данные и реагирует на команды контроллера, изменяя свое состояние.</li>
+		<li><b>Представление</b> (View) отвечает за отображение данных модели пользователю, реагируя на изменения модель.</li>
+		<li><b>Контроллер</b> (Controller) интерпретирует действия пользователя, оповещая модель о необходимости изменений.</li>
+	</ul>
+	<p>Есть passive model & active model. Но из-за веба, этот паттер, претерпел изменения, что вносит смуту, и вряд ли получится найти 3 программиста, у которых совпадет понимание этого паттерна. Главное понимать общие черты, чтобы суметь отличить от MVVM(bindings) ;)</p>
+	<b>Подробней:</b>
+	<ul>
+		<li>https://codepen.io/fikorte/pen/Rjgmqr?limit=all&page=2&q=mvc+example</li>
+		<li>https://codepen.io/broneks/pen/RWRLRG?editors=1010</li>
+		<li>https://codepen.io/kyliepace/pen/aNepxV?editors=1010</li>
+		<li>https://codepen.io/bobodeity/pen/xPbwzX</li>
+	</ul>
+</div>
+</details>
 
 ## Вопросы по HTML:
 
