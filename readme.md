@@ -323,6 +323,7 @@ if("geolocation" in navigator) {
 	<ul>
 		<li>https://ru.wikipedia.org/wiki/Временная_сложность_алгоритма</li>
 		<li>https://habrahabr.ru/post/195482/</li>
+		<li>https://habrahabr.ru/post/188010/</li>
 	</ul>
 </div>
 </details>
@@ -494,6 +495,96 @@ if("geolocation" in navigator) {
 	<ul>
 		<li>https://refactoring.guru/ru/design-patterns/classification</li>
 		<li>https://ru.wikipedia.org/wiki/Шаблон_проектирования</li>
+	</ul>
+</div>
+</details>
+
+<details>
+<summary>Назовите паттерны, которые относятся к порождающим</summary>
+<div>
+	<br />
+	<ul>
+		<li>
+			<b>Одиночка(Singleton)</b>:
+			<br />
+			<p>Одиночка — это порождающий паттерн проектирования, который гарантирует, что у класса есть только один экземпляр, и предоставляет к нему глобальную точку доступа.</p>
+			<p>https://ru.wikipedia.org/wiki/Одиночка_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/singleton</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/singleton</p>
+		</li>
+		<li>
+			<b>Абстрактная фабрика(Abstract factory)</b>
+			<br />
+			<p>Абстрактная фабрика — это порождающий паттерн проектирования, который позволяет создавать семейства связанных объектов, не привязываясь к конкретным классам создаваемых объектов.</p>
+			<p>https://ru.wikipedia.org/wiki/Абстрактная_фабрика_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/abstract-factory</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/abstract_factory</p>
+		</li>
+		<li>
+			<b>Фабричный метод(Factory method)</b>
+			<br />
+			<p>Фабричный метод — это порождающий паттерн проектирования, который определяет общий интерфейс для создания объектов в суперклассе, позволяя подклассам изменять тип создаваемых объектов.</p>
+			<p>https://ru.wikipedia.org/wiki/Фабричный_метод_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/factory-method</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/factory_method</p>
+		</li>
+		<li>
+			<b>Строитель(Builder)</b>
+			<br />
+			<p>Строитель — это порождающий паттерн проектирования, который позволяет создавать сложные объекты пошагово. Строитель даёт возможность использовать один и тот же код строительства для получения разных представлений объектов.</p>
+			<p>https://ru.wikipedia.org/wiki/Строитель_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/builder</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/builder</p>
+		</li>
+		<li>
+			<b>Прототип(Prototype)</b>
+			<br />
+			<p>Прототип — это порождающий паттерн проектирования, который позволяет копировать объекты, не вдаваясь в подробности их реализации.</p>
+			<p>https://ru.wikipedia.org/wiki/Прототип_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/prototype</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/prototype</p>
+		</li>
+		<li>
+			<b>Менее известные:</b>
+			<ul>
+				<li>
+					<b>Отложенная инициализация(Lazy initialization)</b>
+					<br />
+					<p>Объект, инициализируемый во время первого обращения к нему.</p>
+					<p>https://ru.wikipedia.org/wiki/Отложенная_инициализация</p>
+				</li>
+				<li>
+					<b>Пул одиночек(Multiton)</b>
+					<br />
+					<p>Гарантирует, что класс имеет поименованные экземпляры объекта и обеспечивает глобальную точку доступа к ним.</p>
+					<p>https://ru.wikipedia.org/wiki/Объектный_пул</p>
+				</li>
+				<li>
+					<b>Получение ресурса есть инициализация(Resource acquisition is initialization (RAII))</b>
+					<br />
+					<p>Получение некоторого ресурса совмещается с инициализацией, а освобождение — с уничтожением объекта.</p>
+					<p>https://ru.wikipedia.org/wiki/Получение_ресурса_есть_инициализация</p>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</details>
+
+<details>
+<summary>Что такое функциональное программирование?</summary>
+<div>
+	<br />
+	<p>Функциона́льное программи́рование — раздел дискретной математики и парадигма программирования, в которой процесс вычисления трактуется как вычисление значений функций в математическом понимании последних (в отличие от функций как подпрограмм в процедурном программировании).</p>
+	<p>Противопоставляется парадигме императивного программирования, которая описывает процесс вычислений как последовательное изменение состояний (в значении, подобном таковому в теории автоматов). При необходимости, в функциональном программировании вся совокупность последовательных состояний вычислительного процесса представляется явным образом, например, как список.</p>
+	<p>Функциональное программирование предполагает обходиться вычислением результатов функций от исходных данных и результатов других функций, и не предполагает явного хранения состояния программы. Соответственно, не предполагает оно и изменяемость этого состояния (в отличие от императивного, где одной из базовых концепций является переменная, хранящая своё значение и позволяющая менять его по мере выполнения алгоритма).</p>
+	<b>Подробней:</b>
+	<ul>
+		<li>https://ru.wikipedia.org/wiki/Функциональное_программирование</li>
+		<li>https://habrahabr.ru/post/142351/</li>
+		<li>https://ru.stackoverflow.com/questions/417898/Что-такое-функциональное-программирование</li>
+		<li>https://tproger.ru/translations/functional-programming-concepts/</li>
+		<li>https://habrahabr.ru/post/337880/</li>
 	</ul>
 </div>
 </details>
