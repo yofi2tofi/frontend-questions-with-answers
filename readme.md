@@ -377,6 +377,8 @@ if("geolocation" in navigator) {
 		<li>https://codepen.io/broneks/pen/RWRLRG?editors=1010</li>
 		<li>https://codepen.io/kyliepace/pen/aNepxV?editors=1010</li>
 		<li>https://codepen.io/bobodeity/pen/xPbwzX</li>
+		<li>https://habrahabr.ru/company/devexpress/blog/305812/</li>
+		<li>https://codepen.io/MrCheater/pen/GqQpYY?editors=1010</li>
 	</ul>
 </div>
 </details>
@@ -391,6 +393,14 @@ if("geolocation" in navigator) {
 
 <details>
 <summary>Что такое архитектурный-паттерн MVVM?\*</summary>
+<div>
+	<br />
+	<p>В процессе</p>
+</div>
+</details>
+
+<details>
+<summary>Что такое DCI?\*</summary>
 <div>
 	<br />
 	<p>В процессе</p>
@@ -564,6 +574,82 @@ if("geolocation" in navigator) {
 					<br />
 					<p>Получение некоторого ресурса совмещается с инициализацией, а освобождение — с уничтожением объекта.</p>
 					<p>https://ru.wikipedia.org/wiki/Получение_ресурса_есть_инициализация</p>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</details>
+
+<details>
+<summary>Назовите паттерны, которые относятся к структурным</summary>
+<div>
+	<br />
+	<ul>
+		<li>
+			<b>Адаптер(Adapter / Wrapper)</b>
+			<br />
+			<p>Адаптер — это структурный паттерн проектирования, который позволяет объектам с несовместимыми интерфейсами работать вместе.</p>
+			<p>https://ru.wikipedia.org/wiki/Адаптер_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/adapter</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/adapter</p>
+		</li>
+		<li>
+			<b>Мост(Bridge)</b>
+			<br />
+			<p>Мост — это структурный паттерн проектирования, который разделяет один или несколько классов на две отдельные иерархии — абстракцию и реализацию, позволяя изменять их независимо друг от друга.</p>
+			<p>https://ru.wikipedia.org/wiki/Мост_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/bridge</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/bridge</p>
+		</li>
+		<li>
+			<b>Компоновщик(Composite)</b>
+			<br />
+			<p>Компоновщик — это структурный паттерн проектирования, который позволяет сгруппировать объекты в древовидную структуру, а затем работать с ними так, если бы это был единичный объект.</p>
+			<p>https://ru.wikipedia.org/wiki/Composite</p>
+			<p>https://refactoring.guru/ru/design-patterns/composite</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/composite</p>
+		</li>
+		<li>
+			<b>Декоратор(Decorator)</b>
+			<br />
+			<p>Декоратор — это структурный паттерн проектирования, который позволяет динамически добавлять объектам новую функциональность, оборачивая их в полезные «обёртки».</p>
+			<p>https://ru.wikipedia.org/wiki/Декоратор_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/decorator</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/decorator</p>
+		</li>
+		<li>
+			<b>Фасад(Facade)</b>
+			<br />
+			<p>Фасад — это структурный паттерн проектирования, который предоставляет простой интерфейс к сложной системе классов, библиотеке или фреймворку.</p>
+			<p>https://ru.wikipedia.org/wiki/Фасад_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/facade</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/facade</p>
+		</li>
+		<li>
+			<b>Приспособленец(Flyweight) или Легковес</b>
+			<br />
+			<p>Легковес — это структурный паттерн проектирования, который позволяет вместить бóльшее количество объектов в отведённую оперативной память за счёт экономного разделения общего состояния объектов между собой, вместо хранения одинаковых данных в каждом объекте.</p>
+			<p>https://ru.wikipedia.org/wiki/Flyweight</p>
+			<p>https://refactoring.guru/ru/design-patterns/flyweight</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/flyweight</p>
+		</li>
+		<li>
+			<b>Заместитель(Proxy)</b>
+			<br />
+			<p>Заместитель — это структурный паттерн проектирования, который позволяет подставлять вместо реальных объектов специальные объекты-заменители. Эти объекты перехватывают вызовы к оригинальному объекту, позволяя сделать что-то до или после передачи вызова оригиналу.</p>
+			<p>https://ru.wikipedia.org/wiki/Proxy_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/proxy</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/proxy</p>
+		</li>
+		<li>
+			<b>Менее известные:</b>
+			<ul>
+				<li>
+					<b>Единая точка входа(Front controller)</b>
+					<br />
+					<p>Обеспечивает унифицированный интерфейс для интерфейсов в подсистеме. Front Controller определяет высокоуровневый интерфейс, упрощающий использование подсистемы.</p>
+					<p>https://ru.wikipedia.org/wiki/Единая_точка_входа_(шаблон_проектирования)</p>
 				</li>
 			</ul>
 		</li>
