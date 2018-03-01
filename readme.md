@@ -70,6 +70,20 @@ if("geolocation" in navigator) {
 </details>
 
 <details>
+<summary>Как проверить что куки включенны?\*</summary>
+<div> 
+	<br />
+</div>
+
+```javascript
+if (!navigator.cookieEnabled) {
+  alert( 'Включите cookie для комфортной работы с этим сайтом' );
+}
+```
+
+</details>
+
+<details>
 <summary>Объясните, что означает "Семантическая разметка"</summary>
 <div> <br />
 	<p>Семантическая вёрстка, или семантический HTML-код, — это подход к созданию веб-страниц на языке HTML, основанный на использовании HTML-тегов в соответствии с их семантикой (предназначением), а также предполагающий логичную и последовательную иерархию страницы. Он противопоставляется подходу, при котором написание HTML-кода определяется внешним видом веб-страницы. Для оформления веб-страниц, написанных в соответствии с семантикой, используются каскадные таблицы стилей (CSS). Стандарт HTML с самого начала включал в себя ряд семантических тегов, но большую популярность семантическая вёрстка получила после начала работ над HTML5.</p>
@@ -652,6 +666,103 @@ if("geolocation" in navigator) {
 					<p>https://ru.wikipedia.org/wiki/Единая_точка_входа_(шаблон_проектирования)</p>
 				</li>
 			</ul>
+		</li>
+	</ul>
+</div>
+</details>
+
+<details>
+<summary>Назовите паттерны, которые относятся к структурным</summary>
+<div>
+	<br />
+	<ul>
+		<li>
+			<b>Цепочка обязанностей(Chain of responsibility)</b>
+			<br />
+			<p>Цепочка обязанностей — это поведенческий паттерн проектирования, который позволяет передавать запросы последовательно по цепочке обработчиков. Каждый последующий обработчик решает, может ли он обработать запрос сам и стоит ли передавать запрос дальше по цепи.</p>
+			<p>https://ru.wikipedia.org/wiki/Chain_of_Responsibility</p>
+			<p>https://refactoring.guru/ru/design-patterns/chain-of-responsibility</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/chain_of_responsibility</p>
+		</li>
+		<li>
+			<b>Команда, Action, Transaction(Command)</b>
+			<br />
+			<p>Команда — это поведенческий паттерн проектирования, который превращает запросы в объекты, позволяя передавать их как аргументы при вызове методов, ставить запросы в очередь, логировать их, а также поддерживать отмену операций.</p>
+			<p>https://ru.wikipedia.org/wiki/Команда_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/command</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/command</p>
+		</li>
+		<li>
+			<b>Интерпретатор(Interpreter)</b>
+			<br />
+			<p>Решает часто встречающуюся, но подверженную изменениям, задачу.</p>
+			<p>https://ru.wikipedia.org/wiki/Интерпретатор_(шаблон_проектирования)</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/interpreter</p>
+		</li>
+		<li>
+			<p>Итератор, Cursor(Iterator)</p>
+			<br />
+			<p>Итератор — это поведенческий паттерн проектирования, который даёт возможность последовательно обходить элементы составных объектов, не раскрывая их внутреннего представления.</p>
+			<p>https://ru.wikipedia.org/wiki/Итератор_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/iterator</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/iterator</p>
+		</li>
+		<li>
+			<b>Посредник(Mediator)</b>
+			<br />
+			<p>Посредник — это поведенческий паттерн проектирования, который позволяет уменьшить связанность множества классов между собой, благодаря перемещению этих связей в один класс-посредник.</p>
+			<p>https://ru.wikipedia.org/wiki/Mediator</p>
+			<p>https://refactoring.guru/ru/design-patterns/mediator</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/mediator</p>
+		</li>
+		<li>
+			<b>Хранитель(Memento)</b>
+			<br />
+			<p>Снимок — это поведенческий паттерн проектирования, который позволяет делать снимки состояния объектов, не раскрывая подробностей их реализации. Затем снимки можно использовать, чтобы восстановить прошлое состояние объектов.</p>
+			<p>https://ru.wikipedia.org/wiki/Хранитель_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/memento</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/memento</p>
+		</li>
+		<li>
+			<b>Наблюдатель(Observer)</b>
+			<br />
+			<p>Наблюдатель — это поведенческий паттерн проектирования, который создаёт механизм подписки, позволяющий одним объектам следить и реагировать на события, происходящие в других объектах.</p>
+			<p>https://ru.wikipedia.org/wiki/Наблюдатель_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/observer</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/observer</p>
+			<p>https://ru.wikipedia.org/wiki/Издатель-подписчик_(шаблон_проектирования)</p>
+		</li>
+		<li>
+			<b>Состояние(State)</b>
+			<br />
+			<p>Состояние — это поведенческий паттерн проектирования, который позволяет объектам менять поведение в зависимости от своего состояния. Извне создаётся впечатление, что изменился класс объекта.</p>
+			<p>https://ru.wikipedia.org/wiki/Состояние_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/state</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/state</p>
+		</li>
+		<li>
+			<b>Стратегия(Strategy)</b>
+			<br />
+			<p>Стратегия — это поведенческий паттерн проектирования, который определяет семейство схожих алгоритмов и помещает каждый из них в собственный класс. После чего, алгоритмы можно взаимозаменять прямо во время исполнения программы.</p>
+			<p>https://ru.wikipedia.org/wiki/Стратегия_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/strategy</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/strategy</p>
+		</li>
+		<li>
+			<b>Шаблонный метод(Template method)</b>
+			<br />
+			<p>Шаблонный метод — это поведенческий паттерн проектирования, который определяет скелет алгоритма, перекладывая ответственность за некоторые его шаги на подклассы. Паттерн позволяет подклассам переопределять шаги алгоритма, не меняя его общей структуры.</p>
+			<p>https://ru.wikipedia.org/wiki/Шаблонный_метод_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/template-method</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/template_method</p>
+		</li>
+		<li>
+			<b>Посетитель(Visitor)</b>
+			<br />
+			<p>Посетитель — это поведенческий паттерн проектирования, который позволяет создавать новые операции, не меняя классы объектов, над которыми эти операции могут выполняться.</p>
+			<p>https://ru.wikipedia.org/wiki/Посетитель_(шаблон_проектирования)</p>
+			<p>https://refactoring.guru/ru/design-patterns/visitor</p>
+			<p>https://github.com/torokmark/design_patterns_in_typescript/tree/master/visitor</p>
 		</li>
 	</ul>
 </div>
