@@ -706,7 +706,7 @@ if (!navigator.cookieEnabled) {
 </details>
 
 <details>
-<summary>Назовите паттерны, которые относятся к структурным</summary>
+<summary>Назовите паттерны, которые относятся к поведенческим</summary>
 <div>
 	<br />
 	<ul>
