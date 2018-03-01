@@ -10,6 +10,10 @@
 	</ul>
 </div>
 
+<div>
+	<p>Вторая часть: https://github.com/yofi2tofi/frontend-questions-with-answers-2</p>
+</div>
+
 ## Общие вопросы о веб-разработке:
 
 <details>
