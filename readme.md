@@ -67,9 +67,12 @@ if("geolocation" in navigator) {
 	<ul>
 		<li>@supports</li>
 	</ul>
-	<p>
-		Подробней: https://developer.mozilla.org/de/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection
-	</p>
+	<b>Подробней:</b>
+	<br />
+	<ul>
+		<li>https://developer.mozilla.org/de/Learn/Tools_and_testing/Cross_browser_testing/Feature_detection</li>
+		<li>https://habrahabr.ru/post/336466/</li>
+	</ul>
 </div>
 </details>
 
@@ -1207,6 +1210,7 @@ article::before {
 	<ul>
 		<li>Совсем глубоко: https://habrahabr.ru/post/210558/</li>
 		<li>Как рендерит: https://habrahabr.ru/post/224187/</li>
+		<li>https://habrahabr.ru/post/320430/</li>
 		<li>https://stackoverflow.com/questions/33651166/what-is-progressive-rendering</li>
 	</ul>
 </div>
