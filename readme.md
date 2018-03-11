@@ -42,6 +42,13 @@
 </details>
 
 <details>
+<summary>Что такое прогрессивный JPEG?</summary>
+<div> <br />
+	<p>Подробней: https://habrahabr.ru/post/165645/</p>
+</div>
+</details>
+
+<details>
 <summary>Что такое feature detection (определение возможностей браузера)?</summary>
 <div> <br />
 	<p>Feature detection определяет, поддерживает ли браузер тот или иной блок кода и запускает различный код в зависимости от того, поддерживает или нет, так чтобы браузер всегда мог показать рабочий код, вместо репортов об ошибках.</p>
@@ -193,6 +200,30 @@ if (!navigator.cookieEnabled) {
 	<p>Да, это часть спецификации</p>
 	<p><b>dragstart</b>, <b>dragenter</b>, <b>dragover</b>, <b>dragleave</b>, <b>drag</b>, <b>drop</b>, <b>dragend</b></p>
 	<p>Подробней: https://developer.mozilla.org/ru/docs/Web/Guide/HTML/Drag_and_drop#events</p>
+</div>
+</details>
+
+<details>
+<summary>Является ли Web workers частью спецификации HTML 5?</summary>
+<div> <br />
+	<p>Да. Worker - это объект, созданный при помощи конструктора (например, Worker()), который запускает JavaScript файл по имени — этот файл содержит код, который будет выполнен в потоке Worker'а; объекты Workers запускаются в другом глобальном контексте, который отличается от текущего window. Таким образом, использование переменной window для получения текущего глобального контекста (вместо self) внутри Worker вернет ошибку.</p>
+	<b></b>
+	<ul>
+		<li>https://developer.mozilla.org/ru/docs/DOM/Using_web_workers</li>
+		<li>https://html.spec.whatwg.org/multipage/#toc-workers</li>
+	</ul>
+</div>
+</details>
+
+<details>
+<summary>Является ли service workers частью спецификации HTML 5?</summary>
+<div> <br />
+	<p>Service worker запускается в контексте worker'ов, поэтому он не имеет доступа к DOM и работает в потоке отдельном от основного потока JavaScript, управляющего вашим приложением, а следовательно — не блокирует его. Он призван быть полностью асинхронным; как следствие, синхронные API, такие как XHR и localStorage, в service worker'е использовать нельзя.</p>
+	<b>Подробней:</b>
+	<ul>
+		<li>https://developer.mozilla.org/ru/docs/Web/API/Service_Worker_API</li>
+		<li>https://html.spec.whatwg.org/multipage/#toc-workers</li>
+	</ul>
 </div>
 </details>
 
